@@ -41,6 +41,8 @@ wordpress,静的htmlのページに両対応させる
 
 # 2 フォルダ構成
 
+```
+
 template00/
 　├ develop/
 　├ node_modules/
@@ -52,6 +54,8 @@ template00/
 　│      └ common/
 　│
 　└ etc setting files / その他設定ファイル
+
+```
 
 - develop
 
