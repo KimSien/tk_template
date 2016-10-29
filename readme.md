@@ -100,7 +100,6 @@ launch.json
 
 package.json
 
-.babelrc -> es6 setting files
 
 ## 3-4 php,composer設定ファイル
 composer.json

@@ -18,3 +18,25 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['build']);
+
+
+
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var cssnext = require('postcss-cssnext');
+
+var paths = {
+  'scss': 'develop/scss/',
+  'css': 'public/css/'
+}
+
+gulp.task('scss', function() {
+  var processors = [
+      cssnext()
+  ];
+  return gulp.src(paths.scss + '**/*.scss')
+    .pipe(sass())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(paths.css))
+});
+
