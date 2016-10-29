@@ -1,0 +1,8 @@
+{
+    "config": {
+      "vendor-dir": "public/project/common/"
+    },
+    "require": {
+        "mobiledetect/mobiledetectlib": "^2.8"
+    }
+}
