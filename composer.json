@@ -4,5 +4,7 @@
     },
     "require": {
         "mobiledetect/mobiledetectlib": "^2.8"
+    },"require-dev": {
+        "phpunit/phpunit": "3.7.*"
     }
 }

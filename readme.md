@@ -1,4 +1,4 @@
-# new basic template folder　/ 新しいテンプレート用のベーシックプロジェクト
+## new basic template folder　/ 新しいテンプレート用のベーシックプロジェクト
 
 wordpress,静的htmlのページに両対応させる
 独自テンプレート
@@ -27,15 +27,22 @@ wordpress,静的htmlのページに両対応させる
 
 # 1 How　/ 使い方
 
-    基本的にはpublic内のファイルをFTPでアップロードでサイト更新できる
-    仕様にする。
+- 基本的にはpublic内のファイルをFTPでアップロードでサイト更新できる仕様にする。
 
-    必要なアプリケーションがインストールされてるか確認
+- 必要なアプリケーションがインストールされてるか確認
 
-    表示->統合ターミナルより、
-    npm install
-    composer update
-    実行
+- 表示->統合ターミナルより、
+
+```
+
+npm install
+composer update
+実行
+
+```
+
+それぞれ/node_modulesフォルダとpublic/project/common
+フォルダが作られます。
 
 ------------------------
 
@@ -87,11 +94,14 @@ template00/
 
 ## 3-1 git系統
 
-    .git/ 【!注意】 バージョン管理用の隠しフォルダ。
-    .gitignore　クラウド上にあげないようにする為の設定ファイル
+.git/ 【!注意】 バージョン管理用の隠しフォルダ。
 
-    gitについてよく知ろう。-> 概念説明は知ってる人に聞く 
-    [git入門](http://qiita.com/kimioka0/items/be7d22d283d08570150e)
+.gitignore　クラウド上にあげないようにする為の設定ファイル
+
+gitについてよく知ろう。-> 概念説明は知ってる人に聞く 
+
+[git入門](http://qiita.com/kimioka0/items/be7d22d283d08570150e)
+
 
 ## 3-2 vs code設定
 launch.json
