@@ -1,7 +1,6 @@
 ## new basic template folder　/ 新しいテンプレート用のベーシックプロジェクト
 
-wordpress,静的htmlのページに両対応させる
-独自テンプレート
+wordpress,静的htmlのページに両対応させる独自テンプレート
 
 制作途中です。
 
@@ -115,7 +114,9 @@ package.json
 composer.json
 
 
-## 3-5 
+## 3-5 pupunit
+
+public/project/common/bin/phpunit
 
 
 ------------------------
