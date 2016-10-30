@@ -52,6 +52,7 @@ composer update
 template00/
 　├ develop/
 　├ node_modules/
+　├ phptest/
 　├ public/
 　│　├ js/
 　│　├ css/
@@ -72,6 +73,9 @@ template00/
 
     npm library.
 
+- phptest
+
+    php test用ファイル
 
 - publicフォルダが公開用
 
@@ -115,8 +119,13 @@ composer.json
 
 
 ## 3-5 pupunit
+phpunit.xml
 
+run
+```
 public/project/common/bin/phpunit
+
+```
 
 
 ------------------------
@@ -125,7 +134,7 @@ public/project/common/bin/phpunit
 
 表示->統合ターミナル
 - composer update
-
+- npm install
 
 ------------------------
 
