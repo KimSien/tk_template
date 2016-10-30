@@ -112,7 +112,8 @@ launch.json
 ## 3-3 node,npm設定ファイル
 
 package.json
-
+gulpfile.js
+.babelrc
 
 ## 3-4 php,composer設定ファイル
 composer.json

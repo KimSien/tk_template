@@ -33,12 +33,20 @@ var paths = {
 }
 
 gulp.task('scss', function() {
+
+ var browsers = [
+    '> 3%'
+ ];
+
   var processors = [
       cssnext()
   ];
   return gulp.src(paths.scss + '**/*.scss')
     .pipe(sass())
     .pipe(postcss(processors))
+    .pipe(postcss([
+    require('autoprefixer')({browsers: browsers})
+    ]))
     .pipe(gulp.dest(paths.css))
 });
 

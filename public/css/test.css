@@ -1,2 +1,4 @@
 .red {
-  color: #FF3399; }
+  color: #FF3399;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
