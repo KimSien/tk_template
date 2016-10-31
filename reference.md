@@ -1,7 +1,8 @@
 # tk_mix_wordpress web flame ver 1.0
 
     静的ページ、ワードプレスの両方に対応した、テンプレート、フレームワークです。
-
+    ワードプレスのテンプレート先頭に下記をインクルードすれば、独自ルールで
+    静的ページも使えるようになります。
 
 ## reference　/　ドキュメント
 
@@ -38,7 +39,7 @@ pcの場合はこれを表示
 /**
 * wordpress内かどうかをチェック
 */
-Tk::CheckWP(); // true and false
+CheckWP(); // true and false
 ?>
 
 
