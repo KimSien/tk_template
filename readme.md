@@ -153,7 +153,33 @@ public/project/common/bin/phpunit
 
 ------------------------
 
-# 5 
+
+
+
+
+
+
+
+
+------------------------
+other case /　別の開発ベース
+
+現状下記の内容を組み込むかは後で考える。
+this pattern setting divide branch.
+
+
+# need css framework / foundation
+
+cli command install
+
+```
+npm install --global foundation-cli
+```
+
+[*](http://qiita.com/kohki-shikata/items/1abe8d79388ab90e3730)
+
+
+
 
 
 
