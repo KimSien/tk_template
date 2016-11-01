@@ -178,7 +178,7 @@ npm install --global foundation-cli
 
 [*](http://qiita.com/kohki-shikata/items/1abe8d79388ab90e3730)
 
-
+ここにあるサンプルは完全に新しいサイト作成用なので、注意
 
 
 
