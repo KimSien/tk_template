@@ -168,16 +168,60 @@ other case /　別の開発ベース
 this pattern setting divide branch.
 
 
-# need css framework / foundation
+
+
+# A-1 need css framework / foundation
+[npm install foundation](http://foundation.zurb.com/sites/docs/sass.html)
+
+```
+npm install foundation-sites --save
+npm install gulp-load-plugins --save
+ついでに
+npm install motion-ui --save
+```
+
+gulp.file
+```
+var gulp = require('gulp');
+var $    = require('gulp-load-plugins')();
+
+var sassPaths = [
+  'node_modules/foundation-sites/scss',
+  'node_modules/motion-ui/src'
+];
+
+gulp.task('sass', function() {
+  return gulp.src('develop/scss/*.scss')
+    .pipe($.sass({
+      includePaths: sassPaths,
+      outputStyle: 'compressed' // if css compressed **file size**
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9']
+    }))
+    .pipe(gulp.dest('public/css'));
+});
+
+```
+
+コマンド
+```
+gulp sass
+```
+
+で変換
+
+
+## A-2 完全に新規作成で静的サイトをいじる場合 founation supplement 
+
+参考に残しておくだけ.ここは無視で
 
 cli command install
-
 ```
 npm install --global foundation-cli
 ```
-
 [*](http://qiita.com/kohki-shikata/items/1abe8d79388ab90e3730)
-
 ここにあるサンプルは完全に新しいサイト作成用なので、注意
 
 
