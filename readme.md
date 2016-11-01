@@ -21,7 +21,6 @@ wordpress,静的htmlのページに両対応させる独自テンプレート
 - 4 開発方法
 - 5 
 
-
 ------------------------
 
 # 1 How　/ 使い方
@@ -150,6 +149,14 @@ public/project/common/bin/phpunit
 表示->統合ターミナル
 - composer update
 - npm install
+
+## 4-1 css
+
+[Foundation for site](http://foundation.zurb.com/sites/docs/)
+
+詳しくは 下記の A-1 need css framework / foundationを参照
+
+
 
 ------------------------
 
