@@ -53,6 +53,7 @@ template00/
 　├ develop/
 　├ node_modules/
 　├ phptest/
+　├ jstest/
 　├ public/
 　│　├ js/
 　│　├ css/
@@ -76,6 +77,10 @@ template00/
 - phptest
 
     php test用ファイル
+
+- jstest
+
+    es6のままの状態でテストできるようにしてあります。(mocha&espower-babel etc)
 
 - publicフォルダが公開用
 
@@ -114,6 +119,15 @@ launch.json
 package.json
 gulpfile.js
 .babelrc
+
+es6 test方法
+
+[es6 test with mocha,espower-babel](http://akabeko.me/blog/2015/05/es6-unit-test/)
+
+コマンド
+```
+npm test
+```
 
 ## 3-4 php,composer設定ファイル
 composer.json
