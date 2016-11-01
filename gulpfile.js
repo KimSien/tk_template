@@ -22,31 +22,24 @@ gulp.task('watch', function () {
 gulp.task('default', ['build']);
 
 
+//foundation
+var gulp = require('gulp');
+var $    = require('gulp-load-plugins')();
 
-var sass = require('gulp-sass');
-var postcss = require('gulp-postcss');
-var cssnext = require('postcss-cssnext');
+var sassPaths = [
+  'node_modules/foundation-sites/scss',
+  'node_modules/motion-ui/src'
+];
 
-var paths = {
-  'scss': 'develop/scss/',
-  'css': 'public/css/'
-}
-
-gulp.task('scss', function() {
-
- var browsers = [
-    '> 3%'
- ];
-
-  var processors = [
-      cssnext()
-  ];
-  return gulp.src(paths.scss + '**/*.scss')
-    .pipe(sass())
-    .pipe(postcss(processors))
-    .pipe(postcss([
-    require('autoprefixer')({browsers: browsers})
-    ]))
-    .pipe(gulp.dest(paths.css))
+gulp.task('sass', function() {
+  return gulp.src('develop/scss/*.scss')
+    .pipe($.sass({
+      includePaths: sassPaths,
+      outputStyle: 'compressed' // if css compressed **file size**
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9']
+    }))
+    .pipe(gulp.dest('public/css'));
 });
-
