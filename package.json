@@ -1,17 +1,23 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "foundation-sites": "^6.2.4",
+    "gulp-autoprefixer": "^3.1.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "espower-babel": "^4.0.3",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.4.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.2.0",
     "mocha": "^3.1.2",
+    "motion-ui": "^1.2.2",
     "postcss-cssnext": "^2.8.0",
     "power-assert": "^1.4.1"
   },
