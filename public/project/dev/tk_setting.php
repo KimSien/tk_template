@@ -14,7 +14,7 @@
 *
 */
 function CheckWP(){
-    if(isset($wp)){
+    if(defined('TEMPLATEPATH')){
     //echo "<br>wordpressです<br>";
     return true;
     }else{

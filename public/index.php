@@ -1,8 +1,13 @@
 <?php
 /**
-* tk_mix_wordpress web flame ver 1.0
-*/
-require_once($_SERVER['DOCUMENT_ROOT']."/project/setup.php");
+ * Onepress functions
+ *
+ * @package WordPress
+ * @subpackage Onepress
+ *
+ * tk_mix_wordpress web flame ver 1.0
+ */
+include("project/setup.php");
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -10,14 +15,32 @@ require_once($_SERVER['DOCUMENT_ROOT']."/project/setup.php");
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Starter Template</title>
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    
+    <link rel="shortcut icon" href="http://www.toysking.jp/favicon.ico">
+
+    
+    <title><?php echo wp_title(' - ', true, 'right').bloginfo('name'); ?></title>
+	<!-- 
+    <meta name="description" content="<?php echo $n_description; ?>">
+	<meta name="keywords" content="<?php echo $n_keyword; ?>">
+    -->
+
 
     <!-- css setting -->
-    <?php require("config_css.php"); ?>
+    <?php require_once("config_css.php"); ?>
 
 <?php wp_head(); ?> 
 </head>
 <body <?php body_class(); ?>>
+
+
+<?php if(Tk::Pccheck()=="pc"): ?>
+pcの場合はこれを表示
+<?php else: ?>
+スマホ、タブレットの場合
+<?php endif; ?>
 
 テンプレートエンジンを入れるかどうか
 
@@ -42,21 +65,17 @@ require_once($_SERVER['DOCUMENT_ROOT']."/project/setup.php");
   </div>
 </div>
 
-<?php if(Tk::Pccheck()=="pc"): ?>
-pcの場合はこれを表示
-<?php else: ?>
-スマホ、タブレットの場合
-<?php endif; ?>
+
 
 <?php //edit_post_link(); ?>
 
 
 
-<?php include(__DIR__."/side.php"); ?>
+<?php require_once(TEMPLATEPATH."/side.php"); ?>
 
 <?php get_template_part( 'loop' ); ?>
 
 <?php wp_footer() ?>
 </body><!-- js setting -->
-<?php require("config_js.php"); ?>
+<?php require_once("config_js.php"); ?>
 </html>

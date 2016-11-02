@@ -8,6 +8,14 @@
 
 define("TEMPLATEPATH","");
 
+function wp_title($a="",$b="",$c=""){
+    return "wp_title";
+}
+
+function bloginfo($str){
+    return "bloginfo";
+}
+
 
 function get_template_part($str){
     echo "wordpress contents loop bubun";

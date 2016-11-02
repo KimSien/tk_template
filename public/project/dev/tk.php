@@ -12,8 +12,12 @@ class Tk{
     * 
     */
     static function Pccheck(){
+
+        //return "pc";
+        
         $it = new Tk_MobileCheck();
         return $it->GetDevice();
+        
     }
 
 
