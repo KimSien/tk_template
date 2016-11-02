@@ -13,9 +13,14 @@
 ```````````````
 <?php
 /**
-* tk_mix_wordpress web flame ver 1.0
-*/
-require_once($_SERVER['DOCUMENT_ROOT']."/project/setup.php");
+ * Onepress functions
+ *
+ * @package WordPress
+ * @subpackage Onepress
+ *
+ * tk_mix_wordpress web flame ver 1.0
+ */
+include("project/setup.php");
 ?>
 ```````````````
 
@@ -31,19 +36,5 @@ pcの場合はこれを表示
 
 
 
-
-## 内部用メソッド
-
-- wordpressの中かどうかを確かめる
-<?php
-/**
-* wordpress内かどうかをチェック
-*/
-CheckWP(); // true and false
-?>
-
-
-
-## 依存ライブラリ
 
 

@@ -42,7 +42,7 @@ pcの場合はこれを表示
 スマホ、タブレットの場合
 <?php endif; ?>
 
-テンプレートエンジンを入れるかどうか
+
 
 <div class="row small-up-1 medium-up-2 large-up-4">
   <div class="column">
@@ -67,13 +67,12 @@ pcの場合はこれを表示
 
 
 
-<?php //edit_post_link(); ?>
-
-
 
 <?php require_once(TEMPLATEPATH."/side.php"); ?>
 
 <?php get_template_part( 'loop' ); ?>
+
+
 
 <?php wp_footer() ?>
 </body><!-- js setting -->

@@ -1,8 +1,13 @@
 ## new basic template folder　/ 新しいテンプレート用のベーシックプロジェクト
 
-wordpress,静的htmlのページに両対応させる独自テンプレート
+wordpress,静的htmlのページに両対応させる独自テンプレートです。
 
-制作途中です。
+- CSSフレームワークにfoundationを使用
+- jqueryは3.0に対応
+
+## バージョン・開発情報
+
+2016.10.3 under development / 開発中
 
 
 # 要求される環境
@@ -25,7 +30,8 @@ wordpress,静的htmlのページに両対応させる独自テンプレート
 
 # 1 How　/ 使い方
 
-- 基本的にはpublic内のファイルをFTPでアップロードでサイト更新できる仕様にする。
+- 基本的にpublicフォルダ自体をwordpressテンプレートフォルダにアップロードでwordpressテンプレートとして
+動作します。 publicフォルダをFTPでアップロードしてください。
 
 - 必要なアプリケーションがインストールされてるか確認
 
@@ -43,6 +49,12 @@ composer update
 フォルダが作られます。
 
 ------------------------
+# 2 WORDPRESS テンプレートファイルとしての特徴
+
+cssのセッティング
+jsのセッティング
+
+------------------------
 
 # 2 フォルダ構成
 
@@ -50,16 +62,18 @@ composer update
 
 template00/
 　├ develop/
+　├ jstest/
 　├ node_modules/
 　├ phptest/
-　├ jstest/
 　├ public/
-　│　├ js/
+　│　├ contents_html/ --＊後で実装
 　│　├ css/
+　│　├ js/
 　│　├ img/
 　│　└ project/
-　│      └ common/
-　│
+　│      ├ common/
+　│      └ dev/ 
+　│　　　　
 　└ etc setting files / その他設定ファイル
 
 ```
