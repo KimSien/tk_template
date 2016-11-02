@@ -6,7 +6,12 @@
 * 
 */
 
+define("TEMPLATEPATH","");
 
+
+function get_template_part($str){
+    echo "wordpress contents loop bubun";
+}
 
 function edit_post_link(){
     return void;

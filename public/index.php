@@ -50,11 +50,13 @@ pcの場合はこれを表示
 
 <?php //edit_post_link(); ?>
 
+
+
 <?php include(__DIR__."/side.php"); ?>
 
-<?php wp_footer() ?>
-</body>
+<?php get_template_part( 'loop' ); ?>
 
-    <!-- js setting -->
-    <?php require("config_js.php"); ?>
+<?php wp_footer() ?>
+</body><!-- js setting -->
+<?php require("config_js.php"); ?>
 </html>
