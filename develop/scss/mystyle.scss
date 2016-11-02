@@ -1,0 +1,16 @@
+@import 'foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+$red:#FF3399;
+
+.red {
+  color: $red;
+  transform: scale(1.2);
+}
+
+#big_box{
+  max-width: 1100px;
+  margin:0px auto;
+}

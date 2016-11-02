@@ -6,6 +6,8 @@
 * 
 */
 
+
+
 function edit_post_link(){
     return void;
 }

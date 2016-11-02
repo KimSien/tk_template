@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*
+Theme Name: OnePress
+Theme URI: 
+Description: tk
+Version: 1.0
+Author: k
+Author URI: 
+*/
+
+/**
+
+wordpressテンプレート適応用。こちらに編集はしないように
+css/mystyle.cssを使うように
+このスタイルシート自体はインクルードしていません。
+
+*/
+
+.test{
+    display: block;
+}
