@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+# 除外設定
+RewriteCond %{REQUEST_URI} !(^/css/)
+RewriteCond %{REQUEST_URI} !(^/img/)
+RewriteCond %{REQUEST_URI} !(^/js/)
+RewriteCond %{REQUEST_URI} !(^/contents_html/)
+RewriteCond %{REQUEST_URI} !(^/css/)
+RewriteCond %{REQUEST_URI} !(^/project/)
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>

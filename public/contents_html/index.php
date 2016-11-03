@@ -1,5 +1,2 @@
-index 
-from
-test
-
+indexページを読み込んでいます。
 
