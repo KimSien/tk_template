@@ -7,7 +7,7 @@
  *
  * tk_mix_wordpress web flame ver 1.0
  */
-include("project/setup.php");
+include(dirname(__FILE__)."/project/setup.php");
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -27,9 +27,8 @@ include("project/setup.php");
 	<meta name="keywords" content="<?php echo $n_keyword; ?>">
     -->
 
-
     <!-- css setting -->
-    <?php require_once("00config_css.php"); ?>
+    <?php require_once(dirname(__FILE__)."/00config_css.php"); ?>
 
 <?php wp_head(); ?> 
 </head>

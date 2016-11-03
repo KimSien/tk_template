@@ -18,18 +18,15 @@ function bloginfo($str){
 
 
 function get_template_part($str){
-    
-    //echo "wordpress contents loop bubun";
+//echo "wordpress contents loop bubun";
 
 $url = explode(".",$_SERVER["REQUEST_URI"]);
-//echo $url[0];
+if($url[0]=="/"){$url[0]="/index";}
 
 //多少問題あり
 $contents = include($_SERVER["DOCUMENT_ROOT"]."/contents_html".$url[0].".php");
 
 echo $contents;
-
-
 }
 
 function edit_post_link(){

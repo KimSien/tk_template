@@ -5,19 +5,19 @@ ini_set( 'display_errors',1 );
 /**
 * composer library autoload
 */
-include("common/autoload.php");
+include(dirname(__FILE__)."/common/autoload.php");
 
     /**
     * モバイルチェック
     */
-    include("dev/mobilecheck.php");
+    include(dirname(__FILE__)."/dev/mobilecheck.php");
 
     /**
     *　設定、システム用 クラス
     */
     //
     
-    include("dev/tk_setting.php");
+    include(dirname(__FILE__)."/dev/tk_setting.php");
 
 
     /**
@@ -28,13 +28,13 @@ include("common/autoload.php");
     //wordpress
     }else{
     //not wordpress
-    include("dev/tk_wp_wrapper.php");
+    include(dirname(__FILE__)."/dev/tk_wp_wrapper.php");
     }
 
     /**
     *　設定、システム用 クラス
     */
-    include("dev/tk.php");
+    include(dirname(__FILE__)."/dev/tk.php");
 
 
 
