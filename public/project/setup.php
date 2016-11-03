@@ -8,17 +8,15 @@ ini_set( 'display_errors',1 );
 include(dirname(__FILE__)."/common/autoload.php");
 
     /**
-    * モバイルチェック
-    */
-    include(dirname(__FILE__)."/dev/mobilecheck.php");
-
-    /**
     *　設定、システム用 クラス
     */
     //
-    
     include(dirname(__FILE__)."/dev/tk_setting.php");
 
+    /**
+    * モバイルチェック
+    */
+    include(dirname(__FILE__)."/dev/mobilecheck.php");
 
     /**
     *　wpじゃない場合だけ、ダミーfuncionを生成する

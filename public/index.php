@@ -36,5 +36,4 @@ pcの場合はこれを表示
 <!-- contents -->
 <?php get_template_part( 'loop' ); ?>
 
-
 <?php include(dirname(__FILE__)."/04footer.php"); ?>
