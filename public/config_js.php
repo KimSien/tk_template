@@ -6,3 +6,4 @@
 
 <!-- Compressed JavaScript -->
 <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>

@@ -29,7 +29,7 @@ node_modules/
 ## image source
 ##
 public/img/
-w*.psd
+*.psd
 *.png
 *.jpeg
 *.jpg
