@@ -1,35 +1,63 @@
 <?php
+
+//.htaccessでルーティング
+if($_GET["type"]!=""){
+define("PATHSTATIC",$_GET["type"]); 
+}else{
+define("PATHSTATIC","index"); 
+}
+
+try{
+    if(! @include(dirname(__FILE__)."/contents_html/".PATHSTATIC."_meta.php"))
+    throw new Exception("not page");
+}catch(Exception $e){
+// error
+$title="無効なページです";
+$n_description="無効なページです";
+$n_keyword="error";
+
+header('Location: index.html');
+exit;
+
+}
+
+
+/*
 $settingpath = "/newtemp00/public/";
 $settink = "html";
-//echo $_SERVER['REQUEST_URI']."<br>";
-
 $paths = str_replace($settingpath,"",$_SERVER['REQUEST_URI']);
-
 $urls = explode(".",$paths);
-if(count($urls) < 3 and $urls[1] == $settink ){
-//success
-if($urls[0]=="/"){$urls[0]="/index";}
-define("PATHSTATIC",$urls[0]);
-
+if(count($urls) < 3 ){
+    if($urls[0]=="/"){$urls[0]="/index";}
+    define("PATHSTATIC",$urls[0]);
+include(dirname(__FILE__)."/contents_html/".PATHSTATIC."_meta.php");
 }else{
 //errors
 //
 }
-
-//多少問題あり
-include(dirname(__FILE__)."/contents_html/".PATHSTATIC."_meta.php");
+*/
 
 
 /**
 *
 */
 function Tkgettemplate(){
-$url = explode(".",$_SERVER["REQUEST_URI"]);
-if($url[0]=="/"){$url[0]="/index";}
 
-//多少問題あり
-$contents = include(dirname(__FILE__)."/contents_html/".PATHSTATIC.".php");
-echo $contents;
+    try{
+        if(! @include(dirname(__FILE__)."/contents_html/".PATHSTATIC.".php"))
+        throw new Exception("not page");
+        echo $contents;
+    }catch(Exception $e){
+echo <<< EOM
+
+無効なページです。<br> Error 404
+
+
+
+EOM;
+
+    }
+
 }
 
 

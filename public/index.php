@@ -8,6 +8,8 @@ pcの場合はこれを表示
 <?php endif; ?>
 
 
+
+
 <div class="row small-up-1 medium-up-2 large-up-4">
   <div class="column">
     <img src="//placehold.it/300x300" class="thumbnail" alt="">

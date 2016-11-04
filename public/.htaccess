@@ -1,5 +1,9 @@
+AddType application/x-httpd-php .php .html
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+RewriteBase /
 
 # 除外設定
 RewriteCond %{REQUEST_URI} !(^/css/)
@@ -11,5 +15,8 @@ RewriteCond %{REQUEST_URI} !(^/project/)
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+    RewriteRule ^([0-9A-Za-z]+).html$ index.php?type=$1
+
+   # RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
