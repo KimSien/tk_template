@@ -9,7 +9,10 @@ VisualStudioCodeを使っての開発を強くオススメしています。
 
 
 ## バージョン・開発情報
-- 2016.10.4 pre release
+- 2016.10.4 pre release 
+
+    一般的な開発はここで、終了、ここからはプライベートリポジトリで展開
+
 - 2016.10.3 under development / 開発中
 
 
