@@ -1,0 +1,1 @@
+{"version":3,"sources":["myjs.es6.js"],"names":["$","ready","mainfunc","console","log"],"mappings":";;AAAAA,IAAIC,KAAJ,CAAUC,UAAV;;AAEA,SAASA,QAAT,GAAmB;;AAEfC,YAAQC,GAAR,CAAY,WAAZ;AAEH","file":"myjs.es6.js","sourcesContent":["$().ready(mainfunc());\r\n\r\nfunction mainfunc(){\r\n\r\n    console.log(\"test desu\");\r\n\r\n}"]}
