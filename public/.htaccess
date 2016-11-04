@@ -1,7 +1,8 @@
+
 AddType application/x-httpd-php .php .html
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
+RewriteEngine On
 
 RewriteBase /
 
@@ -12,11 +13,11 @@ RewriteCond %{REQUEST_URI} !(^/js/)
 RewriteCond %{REQUEST_URI} !(^/contents_html/)
 RewriteCond %{REQUEST_URI} !(^/css/)
 RewriteCond %{REQUEST_URI} !(^/project/)
+RewriteCond %{REQUEST_URI} !(^/testinc/)
 
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 
-    RewriteRule ^([0-9A-Za-z]+).html$ index.php?type=$1
-
-   # RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^([0-9A-Za-z]+).html$ index.php?type=$1
+# RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>

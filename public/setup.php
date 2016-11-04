@@ -7,6 +7,16 @@ ini_set( 'display_errors',1 );
 */
 include(dirname(__FILE__)."/project/common/autoload.php");
 
+
+    /**
+    * 環境依存定数などの読み込み
+    * define("MYTEMPLATEPATH","/home/xxxx/xxxx/xxxxx/");
+    * 自分で設定してください。
+    * html,wp 共通でインクルードするパーツがある場合は
+    * ここで指定したルートから読み込むようにする
+    */
+    include(dirname(__FILE__)."/ignoreconfig.php");
+
     /**
     *　設定、システム用 クラス
     */

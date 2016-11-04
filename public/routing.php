@@ -12,13 +12,12 @@ try{
     throw new Exception("not page");
 }catch(Exception $e){
 // error
-$title="無効なページです";
-$n_description="無効なページです";
-$n_keyword="error";
+$title="タイトル無設定";
+$n_description="無設定";
+$n_keyword="無設定";
 
 header('Location: index.html');
 exit;
-
 }
 
 
@@ -51,10 +50,8 @@ function Tkgettemplate(){
 echo <<< EOM
 
 無効なページです。<br> Error 404
-
-
-
 EOM;
+
 
     }
 
