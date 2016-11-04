@@ -21,22 +21,4 @@ class Tk{
     }
 
 
-
-
-    static function htmlhead(){
-
-$heads = <<< EOM
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Document</title>
-</head>
-EOM;
-
-    return $heads;
-
-    }
-
-
 }

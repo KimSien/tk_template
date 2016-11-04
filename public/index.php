@@ -1,5 +1,6 @@
 <?php include(dirname(__FILE__)."/00head.php"); ?>
 
+
 <?php if(Tk::Pccheck()=="pc"): ?>
 pcの場合はこれを表示
 <?php else: ?>

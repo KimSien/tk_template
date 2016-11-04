@@ -22,10 +22,10 @@ include(dirname(__FILE__)."/setup.php");
 
     <title><?php echo wp_title(' - ', true, 'right').bloginfo('name'); ?></title>
 
-    <!--
+   
     <meta name="description" content="<?php echo $n_description; ?>">
 	<meta name="keywords" content="<?php echo $n_keyword; ?>">
-    -->
+    
 
     <!-- css setting -->
     <?php require_once(dirname(__FILE__)."/00config_css.php"); ?>
