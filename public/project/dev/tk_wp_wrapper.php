@@ -23,7 +23,7 @@ $url = explode(".",$_SERVER["REQUEST_URI"]);
 if($url[0]=="/"){$url[0]="/index";}
 
 //多少問題あり
-$contents = include($_SERVER["DOCUMENT_ROOT"]."/contents_html".$url[0].".php");
+$contents = include($_SERVER["DOCUMENT_ROOT"]."/labo/contents_html".$url[0].".php");
 echo $contents;
 
 }

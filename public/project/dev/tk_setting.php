@@ -20,21 +20,6 @@ function CheckWP(){
     }else{
     //echo "<br>singleテンプレートです<br>";
     return false;
+    }
 }
-}
-
-
-
-
-if(!CheckWP()){
-
-//include page
-$url = explode(".",$_SERVER["REQUEST_URI"]);
-if($url[0]=="/"){$url[0]="/index";}
-
-//多少問題あり
-include($_SERVER["DOCUMENT_ROOT"]."/contents_html".$url[0]."_meta.php");
-
-}
-
 

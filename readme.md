@@ -12,7 +12,7 @@ wordpress,静的htmlのページに両対応させる独自テンプレートで
 
 # 要求される環境
 
-エディタ: vscode
+エディタ: vscode ver1.7
 
 事前インストール： (win) node,composer,xampp
 
@@ -63,6 +63,7 @@ jsのセッティング
 ```
 
 template00/
+　├ .vscode/
 　├ develop/
 　├ jstest/
 　├ node_modules/
@@ -79,6 +80,9 @@ template00/
 　└ etc setting files / その他設定ファイル
 
 ```
+- .vscode
+
+    vscode用の設定ファイル
 
 - develop
 
