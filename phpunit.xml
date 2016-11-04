@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <phpunit
-        bootstrap="public/project/setup.php"
+        bootstrap="public/setup.php"
         colors="true"
         convertErrorsToExceptions="true"
         convertNoticesToExceptions="true"
