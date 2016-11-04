@@ -20,7 +20,7 @@
  *
  * tk_mix_wordpress web flame ver 1.0
  */
-include("project/setup.php");
+include(dirname(__FILE__)."/setup.php");
 ?>
 ```````````````
 

@@ -13,7 +13,7 @@ RewriteCond %{REQUEST_URI} !(^/js/)
 RewriteCond %{REQUEST_URI} !(^/contents_html/)
 RewriteCond %{REQUEST_URI} !(^/css/)
 RewriteCond %{REQUEST_URI} !(^/project/)
-RewriteCond %{REQUEST_URI} !(^/testinc/)
+RewriteCond %{REQUEST_URI} !(^/inc/)
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -1,6 +1,6 @@
 <?php include(dirname(__FILE__)."/00head.php"); ?>
 
-<?php include(MYTEMPLATEPATH."testinc/test.php"); ?>
+<?php include(MYTEMPLATEPATH."/inc/test.php"); ?>
 
 <?php if(Tk::Pccheck()=="pc"): ?>
 pcの場合はこれを表示
