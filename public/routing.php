@@ -2,7 +2,9 @@
 
 //.htaccessでルーティング
 if(isset($_GET["type"])){
+
 define("PATHSTATIC",$_GET["type"]); 
+
 }else{
 define("PATHSTATIC","index");     
 }
