@@ -1,11 +1,20 @@
 <?php
 
 //.htaccessでルーティング
+if(isset($_GET["type"])){
+define("PATHSTATIC",$_GET["type"]); 
+}else{
+define("PATHSTATIC","index");     
+}
+
+/*
 if($_GET["type"]!=""){
 define("PATHSTATIC",$_GET["type"]); 
 }else{
 define("PATHSTATIC","index"); 
 }
+*/
+
 
 try{
     if(! @include(dirname(__FILE__)."/contents_html/".PATHSTATIC."_meta.php"))
@@ -45,7 +54,7 @@ function Tkgettemplate(){
     try{
         if(! @include(dirname(__FILE__)."/contents_html/".PATHSTATIC.".php"))
         throw new Exception("not page");
-        echo $contents;
+        //echo $contents;
     }catch(Exception $e){
 echo <<< EOM
 
